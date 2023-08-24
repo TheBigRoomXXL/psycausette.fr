@@ -2,6 +2,7 @@ backend:
   name: github
   repo: TheBigRoomXXL/psycho-kitty.fr
   branch: master
+  site_domain: lovergne.dev
 media_folder: "public/media"
 public_folder: "/media"
 collections:
