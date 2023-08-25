@@ -16,8 +16,8 @@ interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
     author: "Charlotte RAUSCHER",
-    title: "Psycho Kitty",
-    description: "Un blog de vulgarisation scientifique en psychologie",
+    title: "PsyCausette",
+    description: "Ici on cause psychologie du travail.",
     lang: "fr-FR",
     ogLocale: "fr_FR",
     themeColor: "#A32CC4",
