@@ -1,13 +1,13 @@
 backend:
   name: github
-  repo: TheBigRoomXXL/psycho-kitty.fr
+  repo: TheBigRoomXXL/psycausette.fr
   branch: master
-  site_domain: lovergne.dev
+  site_domain: psycausette.fr
 media_folder: "public/media"
-public_folder: "/media"
+public_folder: "/public"
 collections:
-  - name: "blog"
-    label: "Blog"
+  - name: "posts"
+    label: "Post"
     folder: "src/content/blog"
     create: true
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -15,6 +15,6 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Publish Date", name: "pubDate", widget: "datetime" }
-      - { label: "Banner Image", name: "banner", widget: "image" }
-      - { label: "Draft", name: "isDraft", widget: "markdown" }
-      - { label: "Body", name: "body", widget: "boolean" }
+      - { label: "Banner", name: "banner", widget: "image", required: false }
+      - { label: "Draft", name: "isDraft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
