@@ -17,13 +17,16 @@ interface SiteConfig {
 export const siteConfig: SiteConfig = {
     author: "Charlotte RAUSCHER",
     title: "PsyCausette",
-    description: "Ici on cause psychologie du travail.",
+    description: `La PsyCausette c’est l’endroit où on cause simplement de 
+    recherche en psychologie du travail : adieu    charabia jargonneux, ici on 
+    va au plus simple !`,
     lang: "fr-FR",
     ogLocale: "fr_FR",
     themeColor: "#A32CC4",
     menuLinks: [
-        { name: "Home", url: "/" },
         { name: "Blog", url: "/blog" },
+        { name: "Ressources", url: "/ressources" },
+        { name: "Glossaire", url: "/glossaire" },
 
     ],
     socialLinks: [

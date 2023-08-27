@@ -1,11 +1,11 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
 import { siteConfig } from "../site.config";
+import HeaderLink from "./HeaderLink.astro";
 ---
 
 <header>
   <nav>
-    <h2><a href="/">{siteConfig.title}</a></h2>
+    <h1><a href="/">{siteConfig.title}</a></h1>
     <div class="internal-links">
       {
         siteConfig.menuLinks.map(({ name, url }) => (
@@ -13,17 +13,9 @@ import { siteConfig } from "../site.config";
         ))
       }
     </div>
-    <div>
-      {
-        siteConfig.socialLinks.map(({ name, url }) => (
-          <a href={url} target="_blank">
-            {name}
-          </a>
-        ))
-      }
-    </div>
   </nav>
 </header>
+
 <style>
   header {
     margin: 0;
@@ -31,15 +23,12 @@ import { siteConfig } from "../site.config";
     background: white;
     box-shadow: 0 2px 8px rgba(var(--black), 5%);
   }
-  h2 {
+  h1 {
     margin: 0;
-    font-size: 1em;
+    padding: 0.5em;
+    font-size: 2rem;
   }
 
-  h2 a,
-  h2 a.active {
-    text-decoration: none;
-  }
   nav {
     display: flex;
     align-items: center;
