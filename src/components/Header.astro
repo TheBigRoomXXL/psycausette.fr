@@ -20,9 +20,8 @@ import HeaderLink from "./HeaderLink.astro";
 
 <style>
   header {
-    color: white;
-    background-color: var(--primary);
-    box-shadow: 0 2px 16px rgba(54, 54, 54, 0.75);
+    background-color: var(--footer-header-background);
+    box-shadow: var(--footer-header-shadow);
   }
   nav {
     display: flex;
@@ -45,7 +44,7 @@ import HeaderLink from "./HeaderLink.astro";
   a {
     padding: 1em;
     font-size: 1.1em;
-    color: white !important;
+    color: var(--footer-header-foreground) !important;
     border-bottom: 4px solid transparent;
     text-decoration: none;
   }

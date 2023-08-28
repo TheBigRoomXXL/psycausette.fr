@@ -32,6 +32,12 @@
 	--content-max-width: 45rem;
 	--minimum-margin: calc(1rem + 1vw);
 
+	--footer-header-foreground: white;
+	--footer-header-background: #7822be;
+	--footer-header-shadow: 0 0px 10px rgba(54, 54, 54, 0.25);
+	--footer-header-link: rgb(127, 255, 249);
+
+
 	color-scheme: dark light;
 }
 
@@ -39,6 +45,8 @@
 	:root {
 		--color-foreground: #cfcfcf;
 		--color-background: #1D1F21;
+		--primary: #b665f8;
+		--secondary: #c5328d;
 	}
 }
 
