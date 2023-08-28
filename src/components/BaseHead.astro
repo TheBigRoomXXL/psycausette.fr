@@ -1,6 +1,5 @@
 ---
 import { siteConfig } from "../site.config";
-import "../../public/global.css";
 
 interface Props {
   pageTitle: string;
@@ -46,6 +45,7 @@ const title = `${pageTitle} ${titleSeparator} ${siteConfig.title}`;
 
 <!-- Style sheet -->
 <meta name="theme-color" content={siteConfig.themeColor} />
+<link rel="stylesheet" type="text/css" href="/global.css" />
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>

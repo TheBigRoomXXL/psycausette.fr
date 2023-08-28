@@ -5,7 +5,9 @@ import HeaderLink from "./HeaderLink.astro";
 
 <header>
   <nav>
-    <h1><a href="/">{siteConfig.title}</a></h1>
+    <h1>
+      <a href="/">{siteConfig.title}</a>
+    </h1>
     <div class="internal-links">
       {
         siteConfig.menuLinks.map(({ name, url }) => (
@@ -18,39 +20,38 @@ import HeaderLink from "./HeaderLink.astro";
 
 <style>
   header {
-    margin: 0;
-    padding: 0 1em;
-    background: white;
-    box-shadow: 0 2px 8px rgba(var(--black), 5%);
+    color: white;
+    background-color: var(--primary);
+    box-shadow: 0 2px 16px rgba(54, 54, 54, 0.75);
   }
-  h1 {
-    margin: 0;
-    padding: 0.5em;
-    font-size: 2rem;
-  }
-
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  nav a {
-    padding: 1em 0.5em;
-    color: var(--black);
+
+  @media (max-width: 640px) {
+    nav {
+      padding-top: 1.5rem;
+      flex-direction: column;
+    }
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  a {
+    padding: 1em;
+    font-size: 1.1em;
+    color: white !important;
     border-bottom: 4px solid transparent;
     text-decoration: none;
   }
-  nav a.active {
+
+  a.active {
     text-decoration: none;
     border-bottom-color: var(--accent);
-  }
-  .social-links,
-  .social-links a {
-    display: flex;
-  }
-  @media (max-width: 720px) {
-    .social-links {
-      display: none;
-    }
   }
 </style>

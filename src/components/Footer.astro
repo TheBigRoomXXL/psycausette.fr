@@ -3,10 +3,12 @@ import { siteConfig } from "../site.config";
 ---
 
 <footer>
-  Ce contenue est publié sous license
-  <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
-    Creative Commons 4.0
-  </a>
+  <div>
+    Ce contenu est publié sous license
+    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+      Creative Commons 4.0
+    </a>
+  </div>
 
   <nav>
     {
@@ -20,22 +22,22 @@ import { siteConfig } from "../site.config";
 </footer>
 <style>
   footer {
-    padding: 2em 1em 6em 1em;
-    background: linear-gradient(var(--gray-gradient)) no-repeat;
-    color: rgb(var(--gray));
-    text-align: center;
-  }
-  .social-links {
     display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin-top: 1em;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: white;
+    background-color: var(--primary);
+    box-shadow: 0 2px 16px rgba(54, 54, 54, 0.75);
   }
-  .social-links a {
-    text-decoration: none;
-    color: rgb(var(--gray));
+
+  @media (min-width: 640px) {
+    footer {
+      flex-direction: row;
+    }
   }
-  .social-links a:hover {
-    color: rgb(var(--gray-dark));
+
+  a {
+    color: #a9fff8 !important;
   }
 </style>
