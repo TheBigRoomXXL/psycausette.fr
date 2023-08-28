@@ -1,0 +1,16 @@
+---
+const { ressource } = Astro.props;
+const { Content } = await ressource.render();
+---
+
+<fieldset id={ressource.data.title}>
+    <legend>
+        {ressource.data.isPinned ? "📌" : ""}
+        <a href={ressource.data.link} target="_blank">
+            {ressource.data.title}
+        </a>
+    </legend>
+    <p>
+        <Content />
+    </p>
+</fieldset>

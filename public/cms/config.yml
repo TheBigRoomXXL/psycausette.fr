@@ -6,15 +6,32 @@ backend:
 media_folder: "public/media"
 public_folder: "/public"
 collections:
-  - name: "posts"
-    label: "Post"
+  - name: "article"
+    label: "Article"
     folder: "src/content/blog"
     create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+    slug: "{{slug}}"
+    fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Publish Date", name: "pubDate", widget: "datetime" }
       - { label: "Banner", name: "banner", widget: "image", required: false }
+      - { label: "Draft", name: "isDraft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "ressource"
+    label: "Ressource"
+    folder: "src/content/resources"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Publish Date", name: "pubDate", widget: "datetime" }
+      - {
+          label: "Épinglé",
+          name: "isPinned",
+          widget: "boolean",
+          default: false,
+        }
       - { label: "Draft", name: "isDraft", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" }

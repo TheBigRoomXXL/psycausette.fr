@@ -1,0 +1,31 @@
+---
+import Base from "../layouts/Base.astro";
+import Ressource from "../components/Ressource.astro";
+import { getCollection } from "astro:content";
+
+const resources = await getCollection("resources");
+---
+
+<Base pageTitle="Ressources">
+  <h2>Ressources</h2>
+  <p>C'est une list de chose utile.</p>
+  <ul>
+    {
+      resources.map((entry) => (
+        <li>
+          <Ressource ressource={entry} />
+        </li>
+      ))
+    }
+  </ul>
+</Base>
+
+<style>
+  ul {
+    padding-inline-start: 0px;
+  }
+  li {
+    margin: 1em 0;
+    list-style-type: none;
+  }
+</style>
