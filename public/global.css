@@ -157,6 +157,7 @@ blockquote {
 	padding: 0 0 0 20px;
 	margin: 0px;
 	font-size: 1.25em;
+	font-style: italic;
 }
 
 /* --- Fieldset ---*/
