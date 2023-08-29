@@ -1,6 +1,11 @@
 ---
 import { siteConfig } from "../site.config";
-import HeaderLink from "./HeaderLink.astro";
+
+const { pathname } = Astro.url;
+
+function isActive(href: string) {
+  return href === pathname || href === pathname.replace(/\/$/, "");
+}
 ---
 
 <header>
@@ -11,7 +16,9 @@ import HeaderLink from "./HeaderLink.astro";
     <div class="internal-links">
       {
         siteConfig.menuLinks.map(({ name, url }) => (
-          <HeaderLink href={url}>{name}</HeaderLink>
+          <a href={url} class={isActive(url) ? "menu active" : "menu"}>
+            {name}
+          </a>
         ))
       }
     </div>
@@ -22,18 +29,34 @@ import HeaderLink from "./HeaderLink.astro";
   header {
     background-color: var(--footer-header-background);
     box-shadow: var(--footer-header-shadow);
+    font-family: "Bricolage Grotesque", sans-serif;
   }
+
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  @media (max-width: 640px) {
+  /* vertical menu on screen to small to show all menus on one line */
+  @media (max-width: 740px) {
     nav {
-      padding-top: 1.5rem;
+      padding-top: 1rem;
       flex-direction: column;
     }
+    /*Remove external padding for very small screen*/
+    header {
+      padding: 0;
+    }
+  }
+
+  a {
+    padding: 1em;
+    border-bottom: 4px solid transparent;
+
+    font-size: 1.1em;
+    text-decoration: none;
+    color: var(--footer-header-foreground) !important;
   }
 
   h1 {
@@ -41,16 +64,12 @@ import HeaderLink from "./HeaderLink.astro";
     font-size: 2rem;
   }
 
-  a {
-    padding: 1em;
-    font-size: 1.1em;
-    color: var(--footer-header-foreground) !important;
-    border-bottom: 4px solid transparent;
-    text-decoration: none;
+  .menu {
+    display: inline-block;
   }
 
-  a.active {
+  .active {
     text-decoration: none;
-    border-bottom-color: var(--accent);
+    border-bottom-color: var(--footer-header-foreground);
   }
 </style>
