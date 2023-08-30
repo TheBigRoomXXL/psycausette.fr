@@ -1,6 +1,6 @@
 ---
 title: "Recap Recherche #1"
-description: La premiere edition de la newletter PsyCausette
+description: La première édition de la newsletter PsyCausette
 pubDate: 2023-08-30T12:24:57.045Z
 isDraft: true
 ---

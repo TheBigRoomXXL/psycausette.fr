@@ -4,7 +4,9 @@ import FormattedDate from "../../components/FormattedDate.astro";
 import Base from "../../layouts/Base.astro";
 
 export async function getStaticPaths() {
-	const posts = await getCollection("blog");
+	const posts = await getCollection("blog", ({ data }) => {
+		return data.isDraft != true;
+	});
 	return posts.map((post) => ({
 		params: { slug: post.slug },
 		props: post,
@@ -20,7 +22,7 @@ const { Content } = await post.render();
 
 <Base pageTitle={title}>
 	<article>
-		<h1>{title}</h1>
+		<h2>{title}</h2>
 		<div class="date">
 			<FormattedDate date={pubDate} />
 		</div>
