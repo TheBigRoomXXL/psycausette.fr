@@ -5,7 +5,7 @@ import PostsList from "../components/PostsList.astro";
 
 <Base pageTitle="Home">
   <section>
-    <h2>Bienvenue !</h2>
+    <h2 id="bienvenue">Bienvenue !</h2>
     <p>
       PsyCausette, en voilà un nom farfelu… Peut-être un peu, admettons-le !
       Mais pourtant c’est bien l’objectif de ce site : ici on cause de
@@ -30,7 +30,12 @@ import PostsList from "../components/PostsList.astro";
     </p>
   </section>
   <section>
-    <h2>Articles Recents</h2>
+    <h2 id="articles">Articles Recents</h2>
     <PostsList />
   </section>
 </Base>
+<style>
+  #bienvenue {
+    margin-block-start: 0;
+  }
+</style>
