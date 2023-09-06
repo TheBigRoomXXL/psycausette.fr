@@ -17,12 +17,8 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
                     <img
                         width={720}
                         height={360}
-                        src={
-                            post.data.banner
-                                ? post.data.banner
-                                : "/blog-placeholder.png"
-                        }
-                        alt=""
+                        src={post.data.banner}
+                        alt="post banner"
                     />
                     <h3 class="title">{post.data.title}</h3>
                     <p class="date">

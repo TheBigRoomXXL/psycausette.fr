@@ -5,8 +5,8 @@ const blog = defineCollection({
 		title: z.string(),
 		description: z.string(),
 		pubDate: z.date(),
-		banner: z.string().optional(),
-		isDraft: z.boolean().optional()
+		banner: z.string().optional().default("/banner-placeholder.png"),
+		isDraft: z.boolean().optional().default(false),
 	}),
 });
 
@@ -15,8 +15,8 @@ const resources = defineCollection({
 		link: z.string(),
 		title: z.string(),
 		pubDate: z.date(),
-		isPinned: z.boolean().optional(),
-		isDraft: z.boolean().optional(),
+		isPinned: z.boolean().optional().default(false),
+		isDraft: z.boolean().optional().default(true),
 	}),
 });
 
