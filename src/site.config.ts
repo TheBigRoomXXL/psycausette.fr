@@ -26,7 +26,7 @@ export const siteConfig: SiteConfig = {
     menuLinks: [
         { name: "Blog", url: "/blog" },
         { name: "Ressources", url: "/ressources" },
-        { name: "Glossaire", url: "/glossaire" },
+        // { name: "Glossaire", url: "/glossaire" },
 
     ],
     socialLinks: [
