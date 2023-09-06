@@ -2,7 +2,6 @@
 title: First post
 description: Lorem ipsum dolor sit amet
 pubDate: 2023-08-01
-banner: /blog-placeholder-3.jpg
 isDraft: false
 ---
 
