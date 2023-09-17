@@ -1,5 +1,5 @@
 ---
-title: "Recap Recherche #1"
+title: "Recap Recherche #0"
 description: La première édition de la newsletter PsyCausette
 pubDate: 2023-08-30T12:24:57.045Z
 isDraft: true
