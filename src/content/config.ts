@@ -6,7 +6,7 @@ const blog = defineCollection({
 		description: z.string(),
 		pubDate: z.date(),
 		banner: z.string().optional().default("/banner-placeholder.png"),
-		isDraft: z.boolean().optional().default(false),
+		isDraft: z.boolean().optional().default(true),
 	}),
 });
 
