@@ -1,7 +1,8 @@
 ---
-title: 'Place holder'
-pubDate: 2023-08-01
+title: Place holder
 link: https://www.truc.fr/
+pubDate: 2023-08-01
+isPinned: false
+isDraft: false
 ---
-
-Ceci est un placeholder
+Ceci est un placeholder. test
