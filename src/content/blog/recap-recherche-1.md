@@ -1,5 +1,5 @@
 ---
-title: First Post !!
+title: Premier poste !!
 description: "Nous y voilà : la première édition de la \"newsletter\" de
   PsyCausette, c'est à dire la première série de récap' d'articles scientifiques
   sous un format plus accessible."
@@ -31,11 +31,11 @@ l’individu ce qui alimente un sentiment de responsabilité et est notamment so
 
 > Gauthier Camus & Sophie Berjot, 2015
 
-[Article sur Cain.info](https://www.cairn.info/revue-les-cahiers-internationaux-de-psychologie-sociale-2015-1-page-53.html)
+[Article sur Cairn.info](https://www.cairn.info/revue-les-cahiers-internationaux-de-psychologie-sociale-2015-1-page-53.html)
 
 Le stéréotype est définit comme un ensemble de caractéristiques associées à un groupe social. Dans cet article le contenu de ce stéréotype est étudié de plusieurs façons et en référence à plusieurs appellation (*« chômeur » VS « demandeur d’emploi »*). Les résultats mettent en avant un stéréotype particulièrement négatif qui met en avant le caractère responsable des chômeurs (*ex : paresseux, voleurs, assistés, manque de courage/volonté/capacités,…*) mais aussi leur statut de « victime de la société » (*ex : pauvres, victimes, malchanceux, exclus, méprisés,…*). Le stéréotype est encore plus rude lorsqu'on utilise l’appellation « chômeurs » plutôt que « demandeur d’emploi » en mettant surtout l'accent sur la responsabilité des chômeurs.
 
-### 🇬🇧 Se confronter au non-emploi : les expériences personnelles et vicariantes du non-emploi génèrent des perceptions plus favorables des personnes sans emploi
+### 🇬🇧 Se confronter au non-emploi : les expériences personnelles et vicariantes du non-emploi génèrent des perceptions plus favorables des personnes sans emploi.
 > Titre original : Facing unemployment : personal and vicarious unemployment experiences generate favourable perceptions of unemployed people.
 
 > Bolette Danckert, 2017
