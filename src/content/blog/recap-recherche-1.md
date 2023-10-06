@@ -1,14 +1,14 @@
 ---
 title: First Post !!
-description: "Voici la première édition de la \"newsletter\" de PsyCausette : la
-  première série de récap' d'articles scientifiques sous un format plus
-  accessible."
+description: "Nous y voilà : la première édition de la \"newsletter\" de
+  PsyCausette, c'est à dire la première série de récap' d'articles scientifiques
+  sous un format plus accessible."
 pubDate: 2023-10-06T10:13:34.459Z
 isDraft: false
 ---
 On entame le premier post de notre petit voyage vulgarisé tous ensemble. Quelle émotion ! Petit guide pratique de lecture pour ce post (et les suivants).
 
-* Un post = un **thème** qui annoncé en titre
+* Un post = un **thème** qui annoncé sera en titre dès la prochaine newsletter
 * Chaque post contiendra les récap' simplifiés de **3 ou 4 articles**
 * Le **titre**, les **auteurs**, la **langue** et le **lien** vers chaque article seront indiqués
   Dans le cas ou vous souhaiteriez lire les articles dans leur entièreté, je vous conseille de **ne pas lire les parties "méthode" et "résultats"** qui sont souvent très complexes. Dans la majorité des cas, l'introduction, la discussion et la conclusion vous permettront de comprendre l'*essentiel* de l'article.
