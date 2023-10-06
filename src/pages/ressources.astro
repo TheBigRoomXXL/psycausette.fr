@@ -3,7 +3,9 @@ import Base from "../layouts/Base.astro";
 import Ressource from "../components/Ressource.astro";
 import { getCollection } from "astro:content";
 
-const resources = await getCollection("resources");
+const resources = await getCollection("resources", ({ data }) => {
+  return data.isDraft != true;
+});
 ---
 
 <Base pageTitle="Ressources">
